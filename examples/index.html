@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrapper{
+			width: 50%;
+			padding-bottom: 50%;
+			margin-bottom: 10px;
+		}
+		.wrapper-alt{
+			padding-bottom: 75%;
+		}
+		.backstretch{
+			opacity: 0;
+		}
+		.backstretch.loaded{
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper backstretch">
+		<img data-src="http://placehold.it/600x400" alt="backstretch" >
+	</div>
+	<div class="wrapper wrapper-alt backstretch">
+		<img data-src="http://placehold.it/800x800" alt="backstretch" >
+	</div>
+	<script type="text/javascript" src="../src/backstretch.js"></script>
+	<script type="text/javascript">
+	(function(){
+		backstretch.run();
+	})();
+	</script>
+</body>
+</html>
